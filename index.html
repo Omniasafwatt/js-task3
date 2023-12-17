@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container d-flex flex-column justify-content-center align-items-center my-3 px-3">
+            <h2 class="my-5">Bookmarker</h2>
+            <div class="dash w-100"></div>
+            <h6><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h6>
+            <div class="input-label w-100 d-flex flex-column justify-content-center align-items-start">
+                <label for="siteName"class="form-label fw-semibold" ><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+            <input type="text" name="siteName" id="siteName" class="form-control" placeholder="Bookmark Name" required>
+            </div>
+
+            <div class="input-label w-100 d-flex flex-column justify-content-center align-items-start my-5">
+                <label for="siteURL" class="form-label fw-semibold"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                <input type="url" name="siteurl" id="siteURL" class="form-control" placeholder="Website URL" required>
+            </div>
+            <BUtton class="btn btn-danger px-5 py-2 my-3" onclick="validation()">Submit</BUtton>
+            <div class="dash w-100"></div>
+            <table class="table text-center my-4">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </body>
+</html>
